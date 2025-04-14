@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    background: #444;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+nav a:hover {
+    background: #ff6600;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #222;
+    border-bottom: 2px solid #ff6600;
+    padding-bottom: 5px;
+}
+
+article {
+    background: #eee;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid #ff6600;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #ff6600;
+    color: white;
+}
+td {
+    background-color: #f9f9f9;
+}
+
+form {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #e65c00;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: #fff;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    #wrapper {
+        width: 95%;
+        padding: 10px;
+    }
+    nav a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+    main {
+        padding: 10px;
+    }
+    table {
+        font-size: 14px;
+    }
+}
