@@ -3,61 +3,52 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Basketball Hub is your source for basketball news, player stats, team rankings, schedules, and more.">
-    <title>Basketball Hub - Games</title>
+    <meta name="description" content="Contact Basketball Hub with your questions, feedback, or suggestions.">
+    <title>Basketball Hub - Contact</title>
     <link rel="stylesheet" href="project.css">
+    <script>
+    function validateForm() {
+        if (document.forms[0].myEmail.value == "") {
+            alert("Please enter an e-mail address.");
+            return false;
+        }
+        return true;
+    }
+    </script>
 </head>
 <body>
-<div id="wrapper">
-<h1>Basketball Hub</h1>
-<nav>
-<a href="index.html">Home</a> &nbsp;
-<a href="news.html">News</a> &nbsp;
-<a href="teams.html">Teams & Players</a> &nbsp;
-<a href="games.html">Games</a> &nbsp;
-</nav>
-        
-<main>
-<h2>Game Schedules & Scores</h2>
-<p>Stay updated with upcoming games, live scores, and past results.</p>
-            
-<article>
-<h3>Upcoming Games</h3>
-<p>Check out the latest matchups and schedules for your favorite teams.</p>
-</article>
-            
-<article>
-<h3>Live Scores</h3>
-<p>Follow real-time scores and game updates as they happen.</p>
-</article>
-</main>
+    <div id="wrapper">
+        <h1>Basketball Hub</h1>
+        <nav>
+            <a href="index.html">Home</a> &nbsp;
+            <a href="news.html">News</a> &nbsp;
+            <a href="teams.html">Teams & Players</a> &nbsp;
+            <a href="games.html">Games</a> &nbsp;
+        </nav>
 
+        <main>
+            <h2>Contact Us</h2>
+            <p>Have questions or suggestions? We'd love to hear from you.</p>
+            <form method="post" action="http://webdevbasics.net/scripts/yoga.php" onsubmit="return validateForm();">
+                <label for="myEmail">Email Address:</label>
+                <input type="email" name="myEmail" id="myEmail">
 
-<h3>Subscribe to Basketball Hub</h3>
-<form action="http://webdevbasics.net/scripts/demo.php" method="post">
-  <label for="name">Full Name:</label>
-  <input type="text" id="name" name="name" required>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5"></textarea>
 
-  <label for="email">Email Address:</label>
-  <input type="email" id="email" name="email" required>
+                <input type="submit" value="Submit">
+            </form>
+        </main>
 
-  <label for="message">Your Message:</label>
-  <textarea id="message" name="message" rows="5"></textarea>
-
-  <input type="submit" value="Submit">
-</form>
-
-        
-<footer>
-  Copyright &copy; 2025 Basketball Hub<br>
-  <a href="mailto:contact@basketballhub.com">contact@basketballhub.com</a>
-  <div>
-    <script>
-      document.write("This page was last modified on: " + document.lastModified);
-    </script>
-  </div>
-</footer>
-
-</div>
+        <footer>
+            Copyright &copy; 2025 Basketball Hub<br>
+            <a href="mailto:contact@basketballhub.com">contact@basketballhub.com</a>
+            <div>
+                <script>
+                    document.write("This page was last modified on: " + document.lastModified);
+                </script>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
